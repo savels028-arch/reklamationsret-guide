@@ -32,6 +32,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//plausible.io">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -68,6 +70,69 @@
     }
     </script>
 
+    <!-- HowTo Schema (Hvidevarer) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Sådan reklamerer du over hvidevarer (vaskemaskine, opvaskemaskine, køleskab)",
+      "description": "Trin-for-trin guide til reklamation af defekte hvidevarer i Danmark",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Stop med at bruge maskinen", "text": "Hvis maskinen lækker vand eller laver mærkelige lyde, undgå yderligere brug for at forebygge skade og bevare reklamationsretten." },
+        { "@type": "HowToStep", "position": 2, "name": "Dokumentér fejlen", "text": "Tag billeder og video. Notér fejlkoder fra displayet. Beskriv hvornår det startede. Gem eventuelle oversvømmelsesfotos til forsikringen." },
+        { "@type": "HowToStep", "position": 3, "name": "Kontakt forhandleren", "text": "Det er Elgiganten, Power, Skousen etc. du skal kontakte – ikke Bosch, Miele eller andre producenter. Send en e-mail med kvittering og billeder." },
+        { "@type": "HowToStep", "position": 4, "name": "Forvent en tekniker", "text": "Butikken sender typisk en tekniker. Det er gratis for dig. Hvis teknikeren vurderer, at det er en fabriksfejl, reparerer eller ombytter de." },
+        { "@type": "HowToStep", "position": 5, "name": "Kræv erstatning ved følgeskader", "text": "Vandskade fra en defekt vaskemaskine? Du kan kræve erstatning ud over selve reparationen. Kontakt også din forsikring." }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema (Online-køb) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Sådan reklamerer du over online-køb",
+      "description": "Trin-for-trin guide til reklamation og fortrydelsesret ved online-køb i Danmark og EU",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Under 14 dage? Brug fortrydelsesretten", "text": "Har du haft varen under 14 dage, kan du returnere den uden begrundelse. Du betaler kun returfragt medmindre webshoppen tilbyder gratis retur." },
+        { "@type": "HowToStep", "position": 2, "name": "Over 14 dage? Brug reklamationsretten", "text": "Samme regler som i fysisk butik: fejl ved varen = reklamation. Kontakt webshoppen skriftligt med ordrenummer, fejlbeskrivelse og billeder." },
+        { "@type": "HowToStep", "position": 3, "name": "Udenlandsk webshop?", "text": "EU-baseret = du har mindst 2 års beskyttelse. Udenfor EU = dine rettigheder kan variere. Brug altid kreditkort for ekstra beskyttelse via chargebacks." },
+        { "@type": "HowToStep", "position": 4, "name": "Betalt med kreditkort?", "text": "Hvis webshoppen ikke samarbejder, kan du bede din bank om en chargeback (indsigelse). Banken kan tilbageføre beløbet direkte." }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema (Tøj og sko) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Sådan reklamerer du over tøj og sko",
+      "description": "Guide til reklamation af defekt tøj og sko i Danmark – hvornår er det en mangel?",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Hvornår er det en mangel?", "text": "Syninger der går op, lynlåse der knækker, såler der løsner sig, farve der vaskes ud efter 1 vask – alt dette er reklamationsberettiget." },
+        { "@type": "HowToStep", "position": 2, "name": "Hvornår er det IKKE en mangel?", "text": "Normal slid efter lang tids brug, fnuller på uld, lette farveændringer over tid. Dyre sko der slides efter 1 år er dog ofte reklamationsberettigede." },
+        { "@type": "HowToStep", "position": 3, "name": "Pris vs. holdbarhed", "text": "En vigtig regel: dyrere produkter forventes at holde længere. Et par støvler til 3.000 kr. der falder fra hinanden efter 6 måneder er næsten altid en mangel." }
+      ]
+    }
+    </script>
+
+    <!-- ItemList Schema (Guide Categories) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Reklamationsguides – Produktkategorier",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Reklamation af elektronik (telefon, laptop, tablet)", "url": "https://guide.reklamationsret.dk/#elektronik" },
+        { "@type": "ListItem", "position": 2, "name": "Reklamation af hvidevarer (vaskemaskine, opvaskemaskine, køleskab)", "url": "https://guide.reklamationsret.dk/#hvidevarer" },
+        { "@type": "ListItem", "position": 3, "name": "Reklamation af online-køb", "url": "https://guide.reklamationsret.dk/#online" },
+        { "@type": "ListItem", "position": 4, "name": "Reklamation af tøj og sko", "url": "https://guide.reklamationsret.dk/#toej" }
+      ]
+    }
+    </script>
+
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
@@ -87,6 +152,22 @@
           "item": "https://guide.reklamationsret.dk/"
         }
       ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Reklamationsret.dk",
+      "url": "https://reklamationsret.dk",
+      "logo": "https://reklamationsret.dk/og-image.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "WarrantyWallet",
+        "url": "https://warrantywallet.dk"
+      }
     }
     </script>
 </head>
